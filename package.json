@@ -1,15 +1,15 @@
 {
-  "name": "markdown-fenced-codeblock-example-injection",
-  "displayName": "Markdown fenced code block example injection",
+  "name": "gdscript-markdown-fenced-codeblock",
+  "displayName": "GDScript support for markdown fenced code block",
   "description": "",
   "version": "0.0.1",
-  "publisher": "bierner",
+  "publisher": "jkbo",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example.git"
+    "url": "https://github.com/jkb0o/gdscript-markdown.git"
   },
   "bugs": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example/issues"
+    "url": "https://github.com/jkb0o/gdscript-markdown.git"
   },
   "engines": {
     "vscode": "^1.8.0"
@@ -20,19 +20,19 @@
   "contributes": {
     "languages": [
       {
-        "id": "superjs-injection"
+        "id": "gdscript-injection"
       }
     ],
     "grammars": [
       {
-        "language": "superjs-injection",
-        "scopeName": "markdown.superjs.codeblock",
+        "language": "gdscript-injection",
+        "scopeName": "markdown.gdscript.codeblock",
         "path": "./syntaxes/codeblock.json",
         "injectTo": [
           "text.html.markdown"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.superjs": "javascript"
+          "meta.embedded.block.gdscript": "javascript"
         }
       }
     ]
